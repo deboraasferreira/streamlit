@@ -123,12 +123,12 @@ if page == pages[2]:
 
 ## Caching -----------------------------------------------------------------
 
-import joblib
-joblib.dump(clf, "model")
+    import joblib
+    joblib.dump(clf, "model")
 
-import pickle
-pickle.dump(clf, open("model", "wb"))
+# import pickle
+# pickle.dump(clf, open("model", "wb"))
 
-joblib.load("model")
+    joblib.load("model")
 
-loaded_model = pickle.load(open("model", "rb"))
+# loaded_model = pickle.load(open("model", "rb"))
